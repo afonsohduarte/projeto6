@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeria Responsiva - SantiClinic</title>
+  <title>Galeria de Imagens - SantiClinic</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,49 +11,58 @@
   <header>
     <nav class="navbar">
       <div class="logo">SantiClinic</div>
+      <!-- Menu Mobile (Checkbox e Label) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+      <label for="menu-toggle" class="menu-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <!-- Links de Navegação -->
       <ul class="nav-links">
         <li><a href="#">Início</a></li>
         <li><a href="#">Serviços</a></li>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre</a></li>
       </ul>
-      <!-- Ícone Menu Mobile -->
-      <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
     </nav>
   </header>
 
   <!-- Galeria de Imagens -->
   <main>
     <section class="gallery">
-      <a href="https://www.santiclinic.com/1" target="_blank"><img src="img1.jpg" alt="Imagem 1"></a>
-      <a href="https://www.santiclinic.com/2" target="_blank"><img src="img2.jpg" alt="Imagem 2"></a>
-      <a href="https://www.santiclinic.com/3" target="_blank"><img src="img3.jpg" alt="Imagem 3"></a>
-      <a href="https://www.santiclinic.com/4" target="_blank"><img src="img4.jpg" alt="Imagem 4"></a>
-      <a href="https://www.santiclinic.com/5" target="_blank"><img src="img5.jpg" alt="Imagem 5"></a>
-      <a href="https://www.santiclinic.com/6" target="_blank"><img src="img6.jpg" alt="Imagem 6"></a>
-      <a href="https://www.santiclinic.com/7" target="_blank"><img src="img7.jpg" alt="Imagem 7"></a>
-      <a href="https://www.santiclinic.com/8" target="_blank"><img src="img8.jpg" alt="Imagem 8"></a>
+      <a href="https://www.santiclinic.com/1" target="_blank">
+        <img src="img1.jpg" alt="Imagem 1">
+      </a>
+      <a href="https://www.santiclinic.com/2" target="_blank">
+        <img src="img2.jpg" alt="Imagem 2">
+      </a>
+      <a href="https://www.santiclinic.com/3" target="_blank">
+        <img src="img3.jpg" alt="Imagem 3">
+      </a>
+      <a href="https://www.santiclinic.com/4" target="_blank">
+        <img src="img4.jpg" alt="Imagem 4">
+      </a>
+      <a href="https://www.santiclinic.com/5" target="_blank">
+        <img src="img5.jpg" alt="Imagem 5">
+      </a>
+      <a href="https://www.santiclinic.com/6" target="_blank">
+        <img src="img6.jpg" alt="Imagem 6">
+      </a>
+      <a href="https://www.santiclinic.com/7" target="_blank">
+        <img src="img7.jpg" alt="Imagem 7">
+      </a>
+      <a href="https://www.santiclinic.com/8" target="_blank">
+        <img src="img8.jpg" alt="Imagem 8">
+      </a>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Rodapé -->
   <footer>
     <p>&copy; 2024 SantiClinic - Todos os direitos reservados</p>
   </footer>
-
-  <!-- JavaScript para Menu Mobile -->
-  <script>
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
-
-    mobileMenu.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
+
 
